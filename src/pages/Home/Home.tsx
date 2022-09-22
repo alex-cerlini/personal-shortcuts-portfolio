@@ -9,6 +9,7 @@ import LinkedinIcon from "../../assets/icons/linkedin.svg";
 import GithubIcon from "../../assets/icons/github.svg";
 import EmailIcon from "../../assets/icons/email.svg";
 import FacebookIcon from "../../assets/icons/facebook.svg";
+import TwitterIcon from "../../assets/icons/twitter.svg";
 
 const Home: React.FC = () => {
   return (
@@ -35,6 +36,12 @@ const Home: React.FC = () => {
         icon={EmailIcon}
         title="contato@alexcerlini.com.br"
         url="mailto:contato@alexcerlini.com.br"
+      />
+
+      <Button
+        icon={TwitterIcon}
+        title="TWITTER"
+        url="https://twitter.com/alexcerlini"
       />
 
       <Button
