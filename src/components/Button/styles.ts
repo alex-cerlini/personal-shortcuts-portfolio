@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const AnchorStyled = styled.a``;
+export const AnchorStyled = styled.a`
+  margin-top: 1.3rem;
+`;
 
 export const Container = styled.div`
   width: 40vw;
@@ -8,7 +10,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.3rem;
+
   padding: 10px 12px;
   background-color: ${(props) => props.theme.colors.primary};
   border-radius: 5px;
