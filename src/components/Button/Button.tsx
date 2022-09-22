@@ -15,7 +15,10 @@ interface Props {
 
 const Button = ({ icon, title, url }: Props) => {
   return (
-    <AnchorStyled href={url} style={{ textDecoration: "none", color: "black" }}>
+    <AnchorStyled
+      href={url}
+      style={{ textDecoration: "none", color: "black", fontWeight: "bold" }}
+    >
       <Container>
         <IconContainer>
           <ImgIcon src={icon} />

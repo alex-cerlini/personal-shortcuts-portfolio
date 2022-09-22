@@ -35,6 +35,7 @@ export const IconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 5px;
 `;
 
 export const ImgIcon = styled.img`
