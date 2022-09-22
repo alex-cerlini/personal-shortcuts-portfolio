@@ -10,6 +10,7 @@ import GithubIcon from "../../assets/icons/github.svg";
 import EmailIcon from "../../assets/icons/email.svg";
 import FacebookIcon from "../../assets/icons/facebook.svg";
 import TwitterIcon from "../../assets/icons/twitter.svg";
+import InstagramIcon from "../../assets/icons/instagram.svg";
 
 const Home: React.FC = () => {
   return (
@@ -48,6 +49,12 @@ const Home: React.FC = () => {
         icon={FacebookIcon}
         title="FACEBOOK"
         url="https://www.facebook.com/alexcerlini/"
+      />
+
+      <Button
+        icon={InstagramIcon}
+        title="INSTAGRAM"
+        url="https://www.instagram.com/alexcerlini/"
       />
     </Container>
   );
