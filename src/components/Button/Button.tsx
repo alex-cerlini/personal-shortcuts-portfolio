@@ -20,7 +20,7 @@ const Button = ({ icon, title, url }: Props) => {
         <IconContainer>
           <ImgIcon src={icon} />
         </IconContainer>
-        <TitleStyled>{title.toUpperCase()}</TitleStyled>
+        <TitleStyled>{title}</TitleStyled>
         <VoidContainer></VoidContainer>
       </Container>
     </AnchorStyled>

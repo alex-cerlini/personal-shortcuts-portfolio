@@ -19,13 +19,13 @@ const Home: React.FC = () => {
 
       <Button
         icon={LinkedinIcon}
-        title="Linkedin"
+        title="LINKEDIN"
         url="https://www.linkedin.com/in/alex-cerlini/"
       />
 
       <Button
         icon={GithubIcon}
-        title="Github"
+        title="GITHUB"
         url="https://github.com/alex-cerlini"
       />
     </Container>
