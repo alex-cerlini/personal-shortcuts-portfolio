@@ -11,10 +11,21 @@ import EmailIcon from "../../assets/icons/email.svg";
 import FacebookIcon from "../../assets/icons/facebook.svg";
 import TwitterIcon from "../../assets/icons/twitter.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
+import ThemeSwitcher from "../../components/ThemeSwitcher";
+
+import useThemeStore from "../../stores/themeStore";
 
 const Home: React.FC = () => {
+  const setTheme = useThemeStore((state) => state.setTheme);
+  const handleSwitchTheme = () => {
+    setTheme();
+  };
+
   return (
     <Container>
+      <a onClick={handleSwitchTheme}>
+        <ThemeSwitcher />
+      </a>
       <ProfilePicture />
       <Header
         title="Alexander Andrade Cerlini"
