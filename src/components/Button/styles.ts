@@ -10,6 +10,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: ${(props) => props.theme.colors.text};
 
   padding: 10px 12px;
   background-color: ${(props) => props.theme.colors.primary};
