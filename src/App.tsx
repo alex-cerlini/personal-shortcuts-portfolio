@@ -8,13 +8,10 @@ import { useState } from "react";
 import useThemeStore from "./stores/themeStore";
 
 const App = () => {
-  const lightTheme = useThemeStore((state) => state.lightTheme);
-  let temaAtual;
-
-  lightTheme ? (temaAtual = light) : (temaAtual = dark);
+  const theme = useThemeStore((state) => state.theme);
 
   return (
-    <ThemeProvider theme={temaAtual}>
+    <ThemeProvider theme={theme === "light" ? light : dark}>
       <GlobalStyle />
       <Home />
     </ThemeProvider>

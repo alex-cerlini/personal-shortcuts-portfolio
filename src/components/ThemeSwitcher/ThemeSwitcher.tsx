@@ -8,11 +8,11 @@ import { Container, IconContainer } from "./styles";
 import useThemeStore from "../../stores/themeStore";
 
 const ThemeSwitcher: React.FC = () => {
-  const lightTheme = useThemeStore((state) => state.lightTheme);
+  const theme = useThemeStore((state) => state.theme);
   return (
     <Container>
       <IconContainer
-        src={lightTheme ? MoonIcon : MoonDarkIcon}
+        src={theme === "light" ? MoonIcon : MoonDarkIcon}
         alt="icone de temas"
       />
     </Container>

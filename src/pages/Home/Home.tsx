@@ -16,9 +16,12 @@ import ThemeSwitcher from "../../components/ThemeSwitcher";
 import useThemeStore from "../../stores/themeStore";
 
 const Home: React.FC = () => {
-  const setTheme = useThemeStore((state) => state.setTheme);
+  const theme = useThemeStore((state) => state.theme);
+  const setLightTheme = useThemeStore((state) => state.setLightTheme);
+  const setDarkTheme = useThemeStore((state) => state.setDarkTheme);
+
   const handleSwitchTheme = () => {
-    setTheme();
+    theme === "light" ? setDarkTheme() : setLightTheme();
   };
 
   return (
